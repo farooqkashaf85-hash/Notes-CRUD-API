@@ -22,17 +22,38 @@ Create a `.env` file in the `server` folder (if required) and set:
 - `MONGO_URI` — MongoDB connection string (if using MongoDB)
 
 **Available scripts**
-- `npm start` — run the production server
-- `npm run dev` — run the server in development mode (with nodemon) if configured
+- `npm start` — run the server with Node
+- `npm run dev` — run the server with nodemon for auto-reload during development
 
 **Run the server**
 
+1. Open a terminal in the `server` folder.
+2. Install dependencies if you have not already:
+
 ```bash
-# development
+npm install
+```
+
+3. Start the server:
+
+```bash
+# development mode (auto restart on changes)
 npm run dev
 
-# production
+# production mode
 npm start
+```
+
+4. Visit the server homepage to verify it is running:
+
+```bash
+http://localhost:5000/
+```
+
+If you want to run without npm scripts, use:
+
+```bash
+node server.js
 ```
 
 **API Endpoints (core)**
